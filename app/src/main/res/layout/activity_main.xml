@@ -5,116 +5,96 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center_horizontal"
+    android:background="#FFE49C"
+
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#E5D68A">
+    android:gravity="center"
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="sans-serif-medium"
-        android:text="CALCULATE YOUR"
-        android:textColor="@color/purple_500"
+        android:text="CALCULATE YOUR AGE"
+        android:textColor="#242B2E"
         android:textSize="25sp"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="AGE"
-        android:padding="10dp"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:background="@color/teal_200"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="IN MINUTES"
-        android:textColor="@color/purple_500"
-        android:textSize="25sp"
+        android:layout_margin="20dp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_DatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Date"
         android:layout_margin="15dp"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/LightGreyTextColor"
-        android:background="@color/lightyellow"
-        />
+        android:text="Select Date"
+        android:textColor="@color/white"
+        android:backgroundTint="#97060B"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
     <TextView
         android:id="@+id/tvSelectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#844046"
-        android:textSize="20sp"
         android:layout_marginTop="20sp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/LightGreyTextColor"
-        android:textSize="20sp"
-        android:text="Selected Date"
+        android:textColor="#844046"
+        android:textSize="20sp" />
 
-        />
+
+    <Button
+        android:id="@+id/btn_TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#97060B"
+        android:text="Select Time"
+        android:textSize="15sp"
+        android:textStyle="bold" />
     <TextView
-        android:id="@+id/tvSelectedDateInMinutes"
+        android:id="@+id/tvSelectedTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:textColor="#844046"
-        android:textSize="35sp"
-       />
-    <TextView
-        android:layout_width="wrap_content"
+        android:textSize="20sp" />
+
+
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/LightGreyTextColor"
-        android:textSize="20sp"
-        android:text="Age In Minutes"
-        />
-    <TextView
-        android:id="@+id/tvAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#844046"
-        android:textSize="20sp"
-        android:layout_marginTop="20sp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/LightGreyTextColor"
-        android:textSize="20sp"
-        android:text="Is Your age" />
+        android:layout_margin="15dp"
+        android:backgroundTint="#97060B"
+        android:text="calculate"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/txt_yourAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#844046"
+        android:text="Your age is:------ "
+        android:textColor="@color/black"
         android:textSize="20sp"
-        android:layout_marginTop="20sp"
-        android:visibility="gone"/>
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn_moreDetails"
+        android:id="@+id/text_total_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="More Details"
-        android:layout_margin="15dp"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/black"
+        android:layout_marginTop="25sp"
+        android:padding="20dp"
+        android:text=""
+       android:backgroundTint="#97060B"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
 
-        />
 
 </LinearLayout>
